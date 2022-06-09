@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 100%);
+}
+.container{
+  display: flex;
+  margin: 50px 100px;
+  flex-direction: column;
+  height: 80vh;
+  font-family: 'Spartan', sans-serif;
+
+}
+
+
+.love{
+display: flex;
+justify-content: space-between;
+height: 60%;
+}
+
+
+.content{
+    width: 50%;
+}
+
+.content h1{
+    width: 70%;
+    font-size: 45px;
+    color: hsl(300, 43%, 22%);
+    font-family: 'Spartan', sans-serif;
+    
+
+}
+.content p{
+    width: 72%;
+    font-size: 15px;
+    line-height: 1.5;
+
+}
+.reviews{
+    width: 45%;
+}
+.star{
+    /* text-align: center; */
+    border-radius: 5px;
+    margin: 20px;
+    padding: 15px;
+    width: 380px;
+    padding-left: 20px;
+    background-color:  hsl(300, 24%, 96%);
+    display: flex;
+
+}
+.star span{
+    margin-left: 5px ;
+}
+.star h4{
+    margin-left: 15px;    
+}
+.margin-left{
+    margin-left: 15px;
+}
+
+.margin-50px{
+    margin-left: 50px;
+}
+.margin-100px{
+    margin-left: 100px;
+}
+
+
+
+
+
+.checked {
+    color: orange;
+  }
+.buyer{
+   width: 100%;
+   color: white;
+   display: flex;
+ 
+}
+.box{
+    width: 400px;
+    height: 250px;
+   background-color: hsl(300, 43%, 22%);
+   padding: 20px;
+   margin: 10px;
+   border-radius: 10px;
+  
+}
+.Mtop-30{
+ margin-top: 25px;
+}
+.Mtop-50{
+   margin-top: 40px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+
+}
+.img img{
+    border-radius: 50%;
+    margin: 5px;
+    height: 50px;
+}
+.name{
+    padding-left: 20px;
+    font-size: 15px;
+}
+.name span{
+    color: hsl(333, 80%, 67%);
+}
+.text{
+    margin-top: 15px;
+   color:  hsl(0, 0%, 100%);
+   opacity: .8;
+}
+.top{
+    background: url(/images/bg-pattern-top-desktop.svg) no-repeat ;
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    top: 5px;
+    z-index: -1;
+}
+.bottom{
+    background: url(/images/bg-pattern-bottom-desktop.svg);
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+
+
+   .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+
+/* responsive style sheet  */
+
+
+
+  @media screen and (max-width: 1050px) {
+    .content{
+        width: 60%;
+    }
+    .content h1{
+        width: 100%;
+  
+        
+    
+    }
+    .buyer{
+        padding-top: 50px;
+    }
+
+    .content p{
+        width: 100%;
+      
+    
+    }
+    .container{ 
+        margin: 50px 50px;
+    }
+    .reviews{
+        width: 30%;
+
+    }
+
+    .box{
+        width: 40%;
+        height: auto;
+     margin: 0px 20px;
+      
+    }
+
+
+
+  }
+  @media screen and (max-width: 675px) {
+    .content{
+        width: 70%;
+    }
+    .reviews{
+        width: 25%;
+
+    }
+    .container{ 
+        margin: 25px;
+    }
+  
+  }
+  @media screen and (max-width: 550px) {
+
+      
+    .content{
+        width: 100%;
+    }
+    .reviews{
+        width: 100%;
+
+    }
+    .container{ 
+        margin: 25px;
+        height: auto;
+        align-items: center;
+        /* justify-content: center; */
+    }
+.love{
+    /* display: flex; */
+    flex-direction: column;
+}
+.buyer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.box{
+    position: relative;
+    width: 80%;
+    margin: 10px 0px;
+    height: 250px;
+
+}
+
+.star span{
+    margin-left: 0px ;
+}
+.star h4{
+    color: hsl(300, 43%, 22%);
+    margin-left: 0px;    
+    font-weight: bold;
+}
+.margin-left{
+    margin-left: 0px;
+}
+
+.margin-50px{
+    margin-left: 0px;
+}
+.margin-100px{
+    margin-left: 0px;
+}
+.bottom{
+    background: url(/images/bg-pattern-bottom-desktop.svg) no-repeat center center/cover;
+    width: 100vw;
+    height: 500px;
+    position: absolute;
+    /* bottom: 5px; */
+    right: -29px;
+}
+.top{
+    background: url(/images/bg-pattern-top-desktop.svg) no-repeat  cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 5px;
+    z-index: -1;
+}
+.star{
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+
+}
+.stars{
+padding: 10px 0px;
+}
+
+  }
